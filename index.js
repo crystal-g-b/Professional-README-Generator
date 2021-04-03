@@ -92,8 +92,7 @@ const generateLicense = require('./utils/generateLicense');
   ## Contact-Information
   * GitHub: [crystal-g-b](https://github.com/${data.git})
   * Email: ${data.email}
-  ## License
-  ${data.license}
+  ## License: ${data.license}
 `;
 
 
