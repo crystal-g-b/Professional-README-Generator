@@ -2,7 +2,11 @@ const inquirer = require('inquirer');
 const fs = require('fs'); 
 const util = require('util');
 
-const writeFileAsync = util.promisify(fs.writeFile);
+const generateLicense = require('./utils/generateLicense');
+
+//const writeFileAsync = util.promisify(fs.writeFile);
+
+
 
 //Create an array of questions for user input
     inquirer
@@ -16,7 +20,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
                 type:'input',
                 message: 'Email:',
                 name: 'email',
-               
             },
             {
                 type: 'input',
@@ -52,7 +55,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
                 type:'list',
                 message: 'What license did you use?',
                 name: 'license',
-                choices: ['The MIT License', 'Mozilla Public License 2.0', 'IBM Public License Version 1.0', 'GNU GPL v3', 'Apache 2.0 License'],
+                choices: ['MIT', 'MPL 2.0', 'IPL 1.0', 'LGPL v3', 'Apache 2.0'],
             },    
         ])
         .then (data =>{
@@ -63,6 +66,9 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
     const generateMarkdown = (data) =>
   `# ${data.title}
+
+  <a href="https://img.shields.io/badge/License-${data.license}-brightgreen"><img src="https://img.shields.io/badge/License-${data.license}-brightgreen"></a>
+
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
@@ -70,20 +76,24 @@ const writeFileAsync = util.promisify(fs.writeFile);
   * [Contribution](#contribution)
   * [Test Instructions](#test-instructions)
   * [Contact Information](#contact-information)
+  * [License](#license)
   
-  ### Description
+  
+  ## Description
   ${data.description}
-  ### Installation
+  ## Installation
   ${data.installation}
-  ### Usage
+  ## Usage
   ${data.usage}
-  ### Contribution
+  ## Contribution
   ${data.contribution}
-  ### Test-Instructions
+  ## Test-Instructions
   ${data.tests}
-  ### Contact-Information
-  [Github Profile](https://github.com/${data.git})
-  ${data.email}
+  ## Contact-Information
+  * GitHub: [crystal-g-b](https://github.com/${data.git})
+  * Email: ${data.email}
+  ## License
+  ${data.license}
 `;
 
 
