@@ -30,7 +30,7 @@
   
   Please see the demo below:
 
-  <iframe src="https://drive.google.com/file/d/1GzlGH5garskLWOPQWzRcEP6MraP9QKag/preview" width="640" height="480"></iframe>
+  ![demo gif](/ASSETS/README-Demo.gif)
 
   ## Contribution
   
