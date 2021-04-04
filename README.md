@@ -32,7 +32,7 @@
 
   ![demo gif](/ASSETS/README-Demo.gif)
 
-  In addition please view the sample-README file that was generated.
+  In addition please view the [`Sample-README file`](https://github.com/crystal-g-b/Professional-README-Generator/blob/master/sample-README.md) that was generated.
 
   ## Contribution
   
