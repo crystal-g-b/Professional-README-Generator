@@ -32,6 +32,8 @@
 
   ![demo gif](/ASSETS/README-Demo.gif)
 
+  In addition please view the sample-README file that was generated.
+
   ## Contribution
   
   Contributions are welcomed. If a Developer would like to contribute to this app, they are welcome to fork this repo or create a pull request to provide fixes or other contributions to this projects.
