@@ -23,12 +23,23 @@
   In order to install the README generator app, the user must install the [`inquirer npm`](https://www.npmjs.com/package/inquirer) that will enable prompts of input on the command line. 
   
   In order to install the inquirer npm, the user must run `npm install` on the command line and that will install the npm package and it's dependencies. Once that is installed, the app itself will start once `node index` is run on the command line.
+
   ## Usage
-  When the user runs `node index`, the inquirer package prompts you in the command line with a series of questions that were created to help build out the README. These questions ask for general information about the user's contact information, licenses choices, projects names etc. All the information needed to create a good README. Once this information is entered `fs.writeFile` is used to asynchronously write data to the file created. Please see the demo below:
+
+  When the user runs `node index`, the inquirer package prompts you in the command line with a series of questions that were created to help build out the README. These questions ask for general information about the user's contact information, licenses choices, projects names etc. All the information needed to create a good README. Once this information is entered `fs.writeFile` is used to asynchronously write data to the file created. 
+  
+  Please see the demo below:
+
+  <iframe src="https://drive.google.com/file/d/1GzlGH5garskLWOPQWzRcEP6MraP9QKag/preview" width="640" height="480"></iframe>
+
   ## Contribution
+  
   Contributions are welcomed. If a Developer would like to contribute to this app, they are welcome to fork this repo or create a pull request to provide fixes or other contributions to this projects.
+
   ## Test-Instructions
+  
   Currently there are no tests for this application but will update the repo once one is available.
+  
   ## Contact-Information
   * GitHub: [crystal-g-b](https://github.com/crystal-g-b)
   * Email: crystal.barnett1@gmail.com
