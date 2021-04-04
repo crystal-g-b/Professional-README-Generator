@@ -45,4 +45,5 @@
   ## Contact-Information
   * GitHub: [crystal-g-b](https://github.com/crystal-g-b)
   * Email: crystal.barnett1@gmail.com
-  ## License: MIT
+  ## License: 
+  * [The MIT License](https://opensource.org/licenses/MIT)
